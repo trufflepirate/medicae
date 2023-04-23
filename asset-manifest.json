@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.3433eb92.css",
-    "main.js": "/static/js/main.490b121b.js",
-    "static/js/787.89eaf1e5.chunk.js": "/static/js/787.89eaf1e5.chunk.js",
-    "static/media/dash_bg.jpg": "/static/media/dash_bg.bc9afce43a217aad445e.jpg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.3433eb92.css.map": "/static/css/main.3433eb92.css.map",
-    "main.490b121b.js.map": "/static/js/main.490b121b.js.map",
-    "787.89eaf1e5.chunk.js.map": "/static/js/787.89eaf1e5.chunk.js.map"
+    "main.css": "/medicae/static/css/main.bbae42ad.css",
+    "main.js": "/medicae/static/js/main.adc56fb8.js",
+    "static/js/787.89eaf1e5.chunk.js": "/medicae/static/js/787.89eaf1e5.chunk.js",
+    "static/media/dash_bg.jpg": "/medicae/static/media/dash_bg.bc9afce43a217aad445e.jpg",
+    "static/media/logo.svg": "/medicae/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/medicae/index.html",
+    "main.bbae42ad.css.map": "/medicae/static/css/main.bbae42ad.css.map",
+    "main.adc56fb8.js.map": "/medicae/static/js/main.adc56fb8.js.map",
+    "787.89eaf1e5.chunk.js.map": "/medicae/static/js/787.89eaf1e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3433eb92.css",
-    "static/js/main.490b121b.js"
+    "static/css/main.bbae42ad.css",
+    "static/js/main.adc56fb8.js"
   ]
 }
