@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .btn{
+
+  }
+
+  .SidebarButtonCircle {
+
+    @apply rounded-full;
+
+    background: #EEEEEE;
+    box-shadow: -4px -4px 5px rgba(255, 255, 255, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  /* .SidebarButtonCircle:hover {
+      --tw-border-opacity: 1;
+      border-color: hsl(var(--nf, var(--n)) / var(--tw-border-opacity));
+      --tw-bg-opacity: 1;
+      background-color: hsl(var(--nf, var(--n)) / var(--tw-bg-opacity));
+      } */
+
+  .Timer-Drug {
+    position: relative;
+    width: 328px;
+    height: 96px;
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    text-transform: none;
+  }
+
+  .Timer-Shock {
+    position: relative;
+    width: 329px;
+    height: 237px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+
+  .Timer-Indicator {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    right: -10px;
+    top: -10px;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+  }
+
+  .Timer-Shock-Extra {
+    width: 299px;
+    height: 47px;
+
+    background: #FFFFFF;
+    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+
+  .Timer-Shock-Gibbet {
+    /* Polygon 3 */
+    @apply mask mask-triangle;
+
+    width: 18px;
+    height: 18px;
+  
+    background: #EED810;
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.25);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@layer utilities {
 
-.App-link {
-  color: #61dafb;
-}
+  /* MORPHS */
+  .GlassMorphic {
+    /* Glassmorphism
+    
+    Frame
+    */
+    background: rgba(238, 238, 238, 0.75);
+    mix-blend-mode: normal;
+    /* Glassmorphism
+    
+    Stroke Effect
+    */
+    border-right: 2px solid rgba(255, 255, 255, 0.15);
+    /* Glassmorphism */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
   }
-  to {
-    transform: rotate(360deg);
+
+  /* TIMERS */
+  .Timer-Green {
+    box-shadow: 1px -1px 4px rgba(24, 116, 152, 0.5);
+
   }
+
+  .Timer-Purple {
+    box-shadow: 1px -1px 4px rgba(81, 45, 109, 0.5);
+  }
+
+  .Timer-Yellow {
+    box-shadow: 1px -1px 4px rgba(249, 217, 35, 0.5);
+  }
+
+  .Timer-Title-Text {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+
+    /* Text Colour */
+
+    /* color: var(--p); */
+  }
+
+  .Timer-Counter-Text {
+    /* green glow */
+    font-style: bold;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 20px;
+    /* identical to box height, or 50% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  .Timer-Drugname-Text {
+    /* green glow */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    /* identical to box height, or 50% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+    text-transform: none;
+  }
+
+  .Timer-Shock-Text {
+    @apply Timer-Drugname-Text;
+  }
+
+  .Timer-Indicator-Text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 50% */
+    letter-spacing: -0.5px;
+  }
+
+  .InfoPanel-Key-Text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .InfoPanel-Value-Text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
 }
